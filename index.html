@@ -1,120 +1,90 @@
 <!DOCTYPE html>
-
 <html>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sacramento&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Sacramento&display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
 
 <head>
+
+    <title>Sachin Bisht</title>
 
 </head>
 
 <body>
-    <table cellspacing = '20'>
-        <tbody>
-            <tr>
-                <td>
-                    <img src="images/pro.jpeg" width="150px" height="150px">
-                </td>
-                <td>
-                    <h1>Sachin Bisht</h1>
-                    <p><i>Full Stack Web Developer</i></p>
-                    <p>From the moment I produced “Hello World!” in the console of my first application.
-                        I knew I was hooked into the world of Programming.</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="top-container">
+            <img class="top-cloud" src="images/cloud.png">
+            <h1>Sachin Bisht</h1>
+            <h2>FULL STACK WEB DEVELOPER</h2>
+            <img class="bottom-cloud" src="images/cloud.png">
+            <img src="images/mountain.png">
+        </div>
 
-
-    <hr>
-    <!--create a line tag in html-->
-        <h3>Skills </h3>
-        <!--(ul)  unorder list creates bullets whereas ol creates a number list-->
-        <table cellspacing="10">
-            <tbody>
-                <tr>
-                    <td>Python</td>
-                    <td> &#11088; &#11088; &#11088; &#11088; &#11088;</td>
-                    <td>HTML & CSS</td>
-                    <td> &#11088; &#11088; &#11088; &#11088; &#11088;</td>
-                </tr>
-                <tr>
-                    <td>Data Structures and Algorithms</td>
-                    <td> &#11088; &#11088; &#11088; &#11088;</td>
-                    <td>Flask</td>
-                    <td> &#11088; &#11088; &#11088; &#11088;</td>
-                </tr>
-                <tr>
-                    <td>PyGame</td>
-                    <td> &#11088; &#11088; &#11088; &#11088;</td>
-                    <td>OOP</td>
-                    <td> &#11088; &#11088; &#11088; </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="middle-container">
+            <div class="profile">
+                <h2>About Me</h2>
+                <img class="profile-img" src="images/pro.jpeg">
+                <p>From the moment I produced “Hello World!” in the console of my first application.
+                    I knew I was hooked into the world of Programming.</p>
+            </div>
             <hr>
-            <h3>Projects</h3>
-            <table cellspacing="15">
-                <thead>
-                    <th>Topic</th>
-                    <th>Details</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://sachin-web.herokuapp.com/">Crypto Exchange</a></td>
-                        <td>Created a market where you can buy and sell
-                            cryptos using flasks in Python.CoinMarketCap
-                            API is used for updating db servers. Used OOP
-                            for better code writing. (Further Plan is to
-                            provide users with features of recommending
-                            coins).</td>
-                    </tr>
-                    <tr>
-                        <td>Pong Game</td>
-                        <td>Created a game of Pong using Pygame module designed an AI which
-                            plays pong against you.</td>
-                    </tr>
-                    <tr>
-                        <td>Reminder Application</td>
-                        <td>A simple programming app which helps in
-                            maintaining health status by giving notification
-                            to do certain task. It also stores your data in a
-                            .txt file with a timestamp of when the task was
-                            done.</td>
-                    </tr>
-                </tbody>
-            </table>
-        <hr>
-    <h3>Education</h3>
-    <table cellspacing="15">
-        <thead>
-            <th>Course</th>
-            <th>Institution</th>
-            <th>Session</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>10th - 12th</td>
-                <td>Mayo International School</td>
-                <td>2014-2016</td>
-            </tr>
-            <tr>
-                <td>B.Sc(Industrial Chemistry)</td>
-                <td>Atma Ram Sanatan Dharma College, DU</td>
-                <td>2016-2019</td>
-            </tr>
-            <tr>
-                <td>M.Sc(Analytical Chemistry)</td>
-                <td>Gurkula Kangri University</td>
-                <td>2019-2021</td>
-            </tr>
+            <div class="skills">
+                <h2>Projects</h2>
+                <div class="skill-row">
+                    <img class="wallet-img" src="images/wallet.png">
+                    <a href="https://sachin-web.herokuapp.com/" target="_blank">
+                    <h3>Crypto Wallet</h3></a>
+                    <p>Created a crypto wallet where you can buy and sell
+                        cryptos using flasks in Python.CoinMarketCap
+                        API is used for updating db servers.
+                        It is hosted on Heroku. 
+                    </p>
+                </div>
+                <div class="skill-row">
+                    <img class="pong-img" src="images/pong.png">
+                    <h3>Pong Game</h3>
+                    <p>Based on the game of pong, this application
+                        was created using the Pygame module in Python.
+                        Designed an AI which plays pong with you</p>
+                </div>
+                <div class="skill-row">
+                    <img class="reminder-img" src="images/reminder.png">
+                    <h3>Reminder Application</h3>
+                    <p>A programming app which helps in
+                        maintaining health status by giving notification
+                        to do certain task. It also stores your data in a
+                        .txt file with a timestamp of when the task was
+                        done.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="contact-me">
+                <h2>Get In Touch</h2>
+                <h3></h3>
+                <p></p>
+                <a class="btn" href="mailto:bishtman12@gmail.com">CONTACT ME</a>
+            </div>
+        </div>
 
-        </tbody>
-    </table>
-        
-    <h3>About Me</h3>
-    <p>I have done M.Sc in Chemistry and took some bold decisions in life and started developing Websites.</p>
-    <a href="contact.html">Contact Me</a>
-    <hr>
 
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/sachin-bisht-946351161/">LinkedIn |</a>
+            <a class="footer-link" href="https://www.codechef.com/users/bishtman12">Codechef |</a>
+            <a class="footer-link" href="https://www.appbrewery.co/">LeetCode |</a>
+            <a class="footer-link" href="https://auth.geeksforgeeks.org/user/bishtman12/">GeekForGeeks |</a>
+            <a class="footer-link" href="https://www.interviewbit.com/profile/sachin-bisht_674">InterviewBit |</a>
+            <a class="footer-link" href="hhttps://github.com/Bishtman12">GitHub |</a>
+            <p class="footer">© Sachin Bisht.</p>
+        </div>
+
+
+
+    </div>
 </body>
 
 </html>
